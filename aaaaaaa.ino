@@ -45,10 +45,10 @@ void loop(){
 
   analogWrite(pwm, pidTerm_scaled);
 
-  Serial.println(" WHEEL ROTATIONS: ");
-  Serial.print(pidTerm_scaled);
-  Serial.print("Volts: ");
+  Serial.print("WHEEL ROTATIONS: ");
   Serial.print(rot);
+  Serial.print(", Volts: ");
+  Serial.println(pidTerm_scaled);
 
   delay(100);
 }
